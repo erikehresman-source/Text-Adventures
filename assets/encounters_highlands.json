@@ -1,0 +1,48 @@
+[
+  {
+    "id": "H001",
+    "title": "A Sheepish Situation",
+    "zone": "Pasture",
+    "type": "Hazard",
+    "faction": null,
+    "xpBucket": "Standard",
+    "intro": "A stubborn sheep blocks yer path, starin\u2019 at ye like it owns the land.",
+    "map": "  [Inn]---[Square]---[Shop]\\n             |\\n          [Pasture]\\n             |\\n          [River]",
+    "choices": [
+      {
+        "text": "Shoo it",
+        "result": "failure",
+        "xp": 20,
+        "reputation": {},
+        "resources": {},
+        "conditions": [
+          "Flustered"
+        ],
+        "notes": ""
+      },
+      {
+        "text": "Offer oats",
+        "result": "success",
+        "xp": 30,
+        "reputation": {},
+        "resources": {
+          "food": -1
+        },
+        "conditions": [],
+        "notes": ""
+      },
+      {
+        "text": "Wait",
+        "result": "neutral",
+        "xp": 25,
+        "reputation": {},
+        "resources": {},
+        "conditions": [],
+        "notes": ""
+      }
+    ],
+    "outro": "Ye carry on.",
+    "emotionTag": "humor",
+    "sandboxOutcome": {}
+  }
+]
