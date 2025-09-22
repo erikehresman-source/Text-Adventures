@@ -1,1 +1,0 @@
-Demo Highlands PWA package
