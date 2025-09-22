@@ -1,0 +1,11 @@
+{
+  "modules": [
+    {
+      "id": "highlands",
+      "name": "Scottish Highlands",
+      "encounters": "assets/encounters_highlands.json",
+      "codex": "assets/codex_highlands.json",
+      "description": "Demo Highlands"
+    }
+  ]
+}
