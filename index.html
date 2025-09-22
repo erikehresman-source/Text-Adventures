@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Text Adventures</title>
+  <link rel="manifest" href="manifest.json"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header>
+  <h1>Text Adventures</h1>
+  <p class="small">Light-hearted adventures with ASCII maps.</p>
+</header>
+<main>
+  <section class="card">
+    <h2>Choose a Module</h2>
+    <select id="moduleSelect"></select>
+    <button id="startBtn">Start</button>
+    <button id="continueBtn">Continue</button>
+    <button id="resetBtn">Reset</button>
+    <label><input type="checkbox" id="toggleMaps" checked/> Show Maps</label>
+  </section>
+
+  <section id="game" class="card" hidden>
+    <div id="hud"></div>
+    <h3 id="encTitle"></h3>
+    <pre id="encMap" class="map" hidden></pre>
+    <p id="encIntro"></p>
+    <div id="choices"></div>
+    <p id="encOutro"></p>
+  </section>
+
+  <section id="codex" class="card" hidden>
+    <h2>Codex</h2>
+    <div id="codexList"></div>
+  </section>
+</main>
+<footer><span class="small">v1.0.0 • Offline Ready</span></footer>
+<script src="scripts/game.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+</body>
+</html>

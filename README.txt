@@ -1,0 +1,1 @@
+Full Highlands demo build with encounters, codex, UI, SW, and debug 404.
