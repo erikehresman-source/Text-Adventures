@@ -1,8 +1,0 @@
-<!DOCTYPE html>
-<html><head><meta charset="utf-8"/><title>Debug Console</title></head>
-<body><h1>Debug Console (404)</h1><p>Use this to unregister SW or clear caches.</p>
-<button onclick="navigator.serviceWorker.getRegistrations().then(r=>{r.forEach(x=>x.unregister());alert('SW unregistered')})">Unregister SW</button>
-<button onclick="caches.keys().then(k=>Promise.all(k.map(x=>caches.delete(x)))).then(()=>alert('Caches cleared'))">Clear Caches</button>
-<button onclick="localStorage.clear();alert('localStorage cleared')">Clear localStorage</button>
-<p><a href='index.html'>Back to game</a></p>
-</body></html>
